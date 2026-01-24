@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ORDINATEUR
 
-## Getting Started
+> **The Computer Science Society of Hansraj College**
 
-First, run the development server:
+---
+
+## 🌌 About
+
+**Ordinateur** is not just a society; it is a singularity of creativity and logic. We explore the event horizon of technology, traversing from the void of complex backend systems to the vibrant nebulae of frontend aesthetics. Our mission is to foster a community where code meets cosmos.
+
+## ✨ Features
+
+-   **Interstellar UI**: A bespoke, void-themed design system featuring subtle film grain, deep space gradients, and premium glassmorphism.
+-   **Magnetic Navigation**: Fluid, physics-based interaction models that respond to user presence.
+-   **Immersive 3D**: Integrated **Three.js** environments for a truly depth-defying experience.
+-   **Next-Gen Performance**: Built on **Next.js 16** and **React 19** for light-speed rendering and RSC capabilities.
+
+## 🛠️ Tech Stack
+
+| Category | Technology | Description |
+| :--- | :--- | :--- |
+| **Framework** | ![Next.js](https://img.shields.io/badge/Next.js_16-black?style=flat-square&logo=next.js&logoColor=white) | The React Framework for the Web |
+| **Language** | ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white) | Typed JavaScript at Any Scale |
+| **Styling** | ![Tailwind CSS](https://img.shields.io/badge/Tailwind_4-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white) | Utility-first CSS Framework |
+| **Animation** | ![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=flat-square&logo=framer&logoColor=white) | Production-ready animation library |
+| **3D Engine** | ![Three.js](https://img.shields.io/badge/Three.js-black?style=flat-square&logo=three.js&logoColor=white) | JavaScript 3D Library (via R3F) |
+
+## 🚀 Getting Started
+
+Initiate the launch sequence:
 
 ```bash
+# 1. Clone the repository
+git clone https://github.com/lakshay-jainn/ordi-web.git
+
+# 2. Enter the directory
+cd ordi-web
+
+# 3. Install dependencies
+npm install
+
+# 4. Ignite the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to view the cosmos.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📂 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+src/
+├── app/              # Next.js App Router
+├── components/       # React Components
+│   ├── home/         # Home page specific components
+│   └── ui/           # Reusable UI elements
+├── lib/              # Utility functions and shared logic
+└── styles/           # Global styles and tailwind config
+```
 
-## Learn More
+## 🤝 Contributing
 
-To learn more about Next.js, take a look at the following resources:
+We welcome fellow travelers to the codebase.
+1.  Fork the repository.
+2.  Create your feature branch (`git checkout -b feature/AmazingFeature`).
+3.  Commit your changes (`git commit -m 'Add some AmazingFeature'`).
+4.  Push to the branch (`git push origin feature/AmazingFeature`).
+5.  Open a Pull Request.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📄 License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Distributed under the MIT License. See `LICENSE` for more information.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<p align="center">
+  Built with 💙 by the Ordinateur Team
+</p>
