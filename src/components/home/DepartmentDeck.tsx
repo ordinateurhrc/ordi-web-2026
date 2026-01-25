@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ArrowRight, Terminal, PenTool, FlaskConical, Code, Share2 } from "lucide-react";
+import { ArrowRight, Terminal, PenTool, Users, Code, Share2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const departments = [
@@ -26,13 +26,13 @@ const departments = [
     tags: ["Content", "Socials", "Strategy"]
   },
   {
-    id: "rnd",
-    name: "Research",
-    short: "R&D",
-    label: "INNOVATION",
-    description: "Pushing boundaries with AI, ML, and deep tech research.",
-    icon: <FlaskConical className="w-5 h-5" />,
-    tags: ["AI/ML", "Papers", "Deep Tech"]
+    id: "org",
+    name: "Organising",
+    short: "Org",
+    label: "MANAGEMENT",
+    description: "The heart of our events. Managing logistics, coordination, and ensuring seamless execution.",
+    icon: <Users className="w-5 h-5" />,
+    tags: ["Logistics", "Events", "Coordination"]
   },
   {
     id: "dev",
@@ -148,3 +148,4 @@ export function DepartmentDeck() {
     </section>
   );
 }
+
