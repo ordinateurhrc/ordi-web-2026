@@ -164,7 +164,7 @@ function TeamCard({ member, role, dept, variant }: { member: any; role: string; 
         <img 
           src={member.photo} 
           alt={member.name} 
-          className="w-full h-full object-cover transition-all duration-700 scale-100 group-hover:scale-110" 
+          className="w-full transition-all duration-700 scale-100 group-hover:scale-110" 
           style={{ filter: 'none' }} // Explicitly forcing no filter
         />
         <div className="absolute inset-0 bg-gradient-to-t from-void/90 via-transparent to-transparent" />

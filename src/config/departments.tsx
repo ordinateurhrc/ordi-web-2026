@@ -161,10 +161,10 @@ export const departmentsData: Record<DepartmentId, Department> = {
       { name: "Nikhilesh Luximon", email: "-", linkedin: "-", photo: "https://ui-avatars.com/api/?name=Nikhilesh+Luximon" }
     ],
     members: [
-      { name: "Mukul Verma", email: "-", linkedin: "-", photo: "https://ui-avatars.com/api/?name=Mukul+Verma" },
-      { name: "Arpit Patel", email: "-", linkedin: "-", photo: "https://ui-avatars.com/api/?name=Arpit+Patel" },
-      { name: "Nathan Swalsing", email: "-", linkedin: "-", photo: "https://ui-avatars.com/api/?name=Nathan+Swalsing" },
-      { name: "B Meghana", email: "-", linkedin: "-", photo: "https://ui-avatars.com/api/?name=B+Meghana" }
+      { name: "Mukul Verma", email: "-", linkedin: "-", photo: "/assets/team/development/mukul-verma.jpg" },
+      { name: "Arpit Patel", email: "-", linkedin: "-", photo: "/assets/team/development/arpit-patel.jpg" },
+      { name: "B Meghana", email: "-", linkedin: "-", photo: "/assets/team/development/b-meghana.jpg" },
+      { name: "Nathan Swalsing", email: "-", linkedin: "-", photo: "/assets/team/development/nathan-swalsing.jpg" }
     ]
   },
   dynamics: {
