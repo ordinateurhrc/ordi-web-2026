@@ -8,6 +8,7 @@ import { Users, Zap, Target, Heart, Lightbulb, ArrowRight } from "lucide-react";
 import Link from "next/link";
 // Import centralized data
 import { departmentsList } from "@/config/departments";
+import { coreValues, milestones as milestonesConfig, stats as statsConfig } from "@/config/about";
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -32,52 +33,7 @@ const itemVariants: Variants = {
   },
 };
 
-const values = [
-  {
-    icon: <Zap className="w-6 h-6" />,
-    title: "Innovation",
-    description: "We push boundaries and explore cutting-edge technologies to solve real-world problems.",
-    bgColor: "bg-blue-500/10",
-    accent: "text-blue-400"
-  },
-  {
-    icon: <Users className="w-6 h-6" />,
-    title: "Community",
-    description: "We believe in the power of collaboration and supporting each other's growth.",
-    bgColor: "bg-purple-500/10",
-    accent: "text-purple-400"
-  },
-  {
-    icon: <Target className="w-6 h-6" />,
-    title: "Excellence",
-    description: "We strive for perfection in everything we create, from code to design.",
-    bgColor: "bg-green-500/10",
-    accent: "text-green-400"
-  },
-  {
-    icon: <Heart className="w-6 h-6" />,
-    title: "Passion",
-    description: "We are driven by our love for technology and the joy of creating.",
-    bgColor: "bg-orange-500/10",
-    accent: "text-orange-400"
-  }
-];
 
-const milestones = [
-  { year: "2018", title: "Founded", description: "Ordinateur was established at Hansraj College, Delhi" },
-  { year: "2019", title: "First Hackathon", description: "Organized the inaugural hackathon with 100+ participants" },
-  { year: "2021", title: "Magazine Launch", description: "Started Bitwise Magazine for tech content and stories" },
-  { year: "2025", title: "Current Session", description: "Expanded to five specialized departments with 40+ members" }
-];
-
-const stats = [
-  { value: "2018", label: "Founded", icon: "📅" },
-  { value: "40+", label: "Active Members", icon: "👥" },
-  { value: "20+", label: "Events Yearly", icon: "🎯" },
-  { value: "5", label: "Departments", icon: "🏗️" },
-  { value: "1000+", label: "Community Reach", icon: "🌐" },
-  { value: "Bitwise", label: "Official Magazine", icon: "📚" }
-];
 
 export default function AboutUs() {
   return (
@@ -122,10 +78,10 @@ export default function AboutUs() {
               className="p-8 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm"
             >
               <div className="flex items-center gap-4 mb-6">
-                <div className="p-3 rounded-lg bg-blue-500/10 border border-blue-400/30">
-                  <Lightbulb className="w-6 h-6 text-blue-400" />
+                <div className="p-3 rounded-lg bg-white/10 border border-accretion/30">
+                  <Lightbulb className="w-6 h-6 text-accretion" />
                 </div>
-                <h2 className="text-3xl font-bold text-white">Our Mission</h2>
+                <h2 className="text-3xl font-bold text-accretion">Our Mission</h2>
               </div>
               <p className="text-starlight/80 text-lg leading-relaxed">
                 To inspire, educate, and empower students through technology, fostering a culture of innovation, collaboration, and continuous learning.
@@ -140,10 +96,10 @@ export default function AboutUs() {
               className="p-8 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm"
             >
               <div className="flex items-center gap-4 mb-6">
-                <div className="p-3 rounded-lg bg-purple-500/10 border border-purple-400/30">
-                  <Target className="w-6 h-6 text-purple-400" />
+                <div className="p-3 rounded-lg bg-white/10 border border-accretion/30">
+                  <Target className="w-6 h-6 text-accretion" />
                 </div>
-                <h2 className="text-3xl font-bold text-white">Our Vision</h2>
+                <h2 className="text-3xl font-bold text-accretion">Our Vision</h2>
               </div>
               <p className="text-starlight/80 text-lg leading-relaxed">
                 To become a beacon of technological excellence, creating a vibrant ecosystem where the next generation of tech leaders emerges.
@@ -171,13 +127,13 @@ export default function AboutUs() {
               viewport={{ once: true }}
               className="grid grid-cols-1 md:grid-cols-2 gap-8"
             >
-              {values.map((value, idx) => (
+              {coreValues.map((value, idx) => (
                 <motion.div
                   key={idx}
                   variants={itemVariants}
-                  className={`p-8 rounded-2xl border border-white/10 ${value.bgColor} backdrop-blur-sm hover:border-white/30 transition-all duration-300 group`}
+                  className="p-8 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm hover:border-white/30 transition-all duration-300 group"
                 >
-                  <div className={`w-12 h-12 rounded-lg ${value.bgColor} border border-white/20 flex items-center justify-center ${value.accent} mb-6 group-hover:scale-110 transition-transform`}>
+                  <div className="w-12 h-12 rounded-lg bg-white/10 border border-white/20 flex items-center justify-center text-accretion mb-6 group-hover:scale-110 transition-transform">
                     {value.icon}
                   </div>
                   <h3 className="text-2xl font-bold text-white mb-3">{value.title}</h3>
@@ -198,7 +154,7 @@ export default function AboutUs() {
             <div className="relative">
               <div className="absolute left-1/2 transform -translate-x-1/2 w-px h-full bg-white/10 hidden md:block" />
               <div className="space-y-12">
-                {milestones.map((milestone, idx) => (
+                {milestonesConfig.map((milestone, idx) => (
                   <motion.div
                     key={idx}
                     initial={{ opacity: 0, y: 20 }}
