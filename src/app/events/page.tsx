@@ -9,99 +9,6 @@ import { Calendar, MapPin, Users, ArrowRight, Sparkles } from "lucide-react";
 import { useState } from "react";
 import { events } from "@/config/eventConfigs/list";
 
-const events = [
-  {
-    id: "devfest-2024",
-    title: "DevFest 2024",
-    description: "Join us for an exciting festival of technology, innovation, and learning.",
-    date: "March 15, 2024",
-    location: "Hansraj College",
-    attendees: "500+",
-    category: "Festival",
-    color: "from-blue-500 to-cyan-500",
-    bgColor: "bg-blue-500/10",
-    accent: "text-blue-400",
-    accentBorder: "border-blue-400/30",
-    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=300&fit=crop",
-    fullDescription: "DevFest is our flagship event where developers, designers, and innovators come together. Features keynote speeches, workshops, hackathons, and networking sessions."
-  },
-  {
-    id: "ctf-championship",
-    title: "CTF Championship",
-    description: "Capture The Flag competition showcasing cybersecurity skills.",
-    date: "February 10, 2024",
-    location: "Online",
-    attendees: "200+",
-    category: "Competition",
-    color: "from-red-500 to-orange-500",
-    bgColor: "bg-red-500/10",
-    accent: "text-red-400",
-    accentBorder: "border-red-400/30",
-    image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop",
-    fullDescription: "A competitive cybersecurity event where teams solve challenges, find vulnerabilities, and demonstrate their hacking skills in a legal and ethical environment."
-  },
-  {
-    id: "web-bootcamp",
-    title: "Web Development Bootcamp",
-    description: "Intensive workshop on modern web technologies and best practices.",
-    date: "January 20, 2024",
-    location: "Hansraj College",
-    attendees: "150+",
-    category: "Workshop",
-    color: "from-purple-500 to-pink-500",
-    bgColor: "bg-purple-500/10",
-    accent: "text-purple-400",
-    accentBorder: "border-purple-400/30",
-    image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop",
-    fullDescription: "A comprehensive bootcamp covering frontend frameworks, backend development, APIs, databases, and deployment strategies."
-  },
-  {
-    id: "design-workshop",
-    title: "UI/UX Design Workshop",
-    description: "Learn to create stunning user interfaces and experiences.",
-    date: "February 25, 2024",
-    location: "Hansraj College",
-    attendees: "100+",
-    category: "Workshop",
-    color: "from-pink-500 to-rose-500",
-    bgColor: "bg-pink-500/10",
-    accent: "text-pink-400",
-    accentBorder: "border-pink-400/30",
-    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=300&fit=crop",
-    fullDescription: "Master the principles of user interface and user experience design. Learn prototyping, wireframing, and design tools."
-  },
-  {
-    id: "innovation-summit",
-    title: "Innovation Summit",
-    description: "Connecting innovators, entrepreneurs, and tech enthusiasts.",
-    date: "March 30, 2024",
-    location: "Hansraj College",
-    attendees: "300+",
-    category: "Conference",
-    color: "from-green-500 to-emerald-500",
-    bgColor: "bg-green-500/10",
-    accent: "text-green-400",
-    accentBorder: "border-green-400/30",
-    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=300&fit=crop",
-    fullDescription: "A platform for sharing innovative ideas, pitching projects, and networking with like-minded individuals in the tech community."
-  },
-  {
-    id: "coding-challenge",
-    title: "Monthly Coding Challenge",
-    description: "Solve algorithmic problems and showcase your coding prowess.",
-    date: "Every Month",
-    location: "Online",
-    attendees: "250+",
-    category: "Competition",
-    color: "from-yellow-500 to-orange-500",
-    bgColor: "bg-yellow-500/10",
-    accent: "text-yellow-400",
-    accentBorder: "border-yellow-400/30",
-    image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop",
-    fullDescription: "A recurring monthly competition where programmers tackle challenging problems, compete for prizes, and improve their algorithmic thinking."
-  }
-];
-
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
@@ -151,7 +58,8 @@ export default function EventsPage() {
               Events
             </h1>
             <p className="text-starlight/60 text-lg md:text-xl font-light tracking-wide max-w-2xl mx-auto">
-              Discover workshops, competitions, and conferences that bring our community together.
+              Discover workshops, competitions, and conferences that bring our
+              community together.
             </p>
           </motion.div>
         </section>
@@ -174,9 +82,7 @@ export default function EventsPage() {
                   className="group relative h-96 cursor-pointer"
                 >
                   {/* Animated background orb */}
-                  <motion.div
-                    className="absolute -inset-0.5 rounded-2xl blur-2xl opacity-20 group-hover:opacity-40 transition-opacity duration-300 bg-accretion/20"
-                  />
+                  <motion.div className="absolute -inset-0.5 rounded-2xl blur-2xl opacity-20 group-hover:opacity-40 transition-opacity duration-300 bg-accretion/20" />
 
                   {/* Card Container */}
                   <motion.div
@@ -194,7 +100,7 @@ export default function EventsPage() {
                         transition={{ duration: 0.3 }}
                       />
                       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-void/80" />
-                      
+
                       {/* Category Badge */}
                       <div className="absolute top-4 right-4">
                         <span className="text-xs uppercase tracking-widest font-bold border border-accretion/40 px-2.5 py-1.5 rounded-md bg-white/5 group-hover:border-accretion/80 text-accretion transition-all duration-300">
@@ -249,7 +155,10 @@ export default function EventsPage() {
                     />
 
                     {/* Full card link overlay */}
-                    <Link href={`/events/${event.id}`} className="absolute inset-0" />
+                    <Link
+                      href={`/events/${event.id}`}
+                      className="absolute inset-0"
+                    />
                   </motion.div>
 
                   {/* Decorative corner accent */}
@@ -279,7 +188,8 @@ export default function EventsPage() {
               Stay Updated
             </h2>
             <p className="text-starlight/70 text-lg mb-8 max-w-2xl mx-auto">
-              Follow our social channels to stay informed about upcoming events, registrations, and announcements.
+              Follow our social channels to stay informed about upcoming events,
+              registrations, and announcements.
             </p>
             <motion.button
               whileHover={{ scale: 1.05 }}
