@@ -106,18 +106,18 @@ export default function SearchBar() {
           </form>
 
           {showSuggestions && suggestions.length > 0 && (
-            <div className="fixed top-20 right-8 mt-2 bg-white rounded-lg shadow-lg max-h-96 overflow-y-auto w-64 z-[100]">
+            <div className="absolute top-full mt-2 right-0 bg-black/70 backdrop-blur-md border border-white/10 rounded-lg shadow-lg max-h-96 overflow-y-auto w-64 z-[100]">
               {suggestions.map((item, index) => (
                 <div
                   key={index}
-                  className="p-3 cursor-pointer border-b border-gray-100 last:border-b-0 hover:bg-gray-50 transition-colors"
+                  className="p-3 cursor-pointer border-b border-white/10 last:border-b-0 hover:bg-white/10 transition-colors"
                   onClick={() =>  {
                     console.log('DIV CLICKED') 
                     handleSelectSuggestion(item.path)
                 }}
                 >
-                  <strong className="block mb-1 text-gray-900">{item.title}</strong>
-                  <p className="text-xs text-gray-600 m-0">{item.description}</p>
+                  <strong className="block mb-1 text-white-900">{item.title}</strong>
+                  <p className="text-xs text-grey-600 m-0">{item.description}</p>
                 </div>
               ))}
             </div>
