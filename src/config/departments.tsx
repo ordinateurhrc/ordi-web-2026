@@ -1,6 +1,6 @@
-import { Terminal, PenTool, Users, Code, Share2 } from "lucide-react";
+import { Terminal, PenTool, Users, Code, Share2, Award } from "lucide-react";
 
-export type DepartmentId = "technical" | "editorial" | "organising" | "development" | "dynamics";
+export type DepartmentId = "technical" | "editorial" | "organising" | "development" | "dynamics" | "motm";
 
 export interface TeamMember {
   name: string;
@@ -156,7 +156,7 @@ export const departmentsData: Record<DepartmentId, Department> = {
       { name: "Nikhilesh Luximon", email: "-", linkedin: "-", photo: "https://ui-avatars.com/api/?name=Nikhilesh+Luximon" }
     ],
     members: [
-      { name: "Mukul Verma", email: "-", linkedin: "-", photo: "/assets/team/development/mukul-verma.jpg" },
+      { name: "Mukul", email: "-", linkedin: "-", photo: "/assets/team/development/mukul-verma.jpg" },
       { name: "Arpit Patel", email: "-", linkedin: "-", photo: "/assets/team/development/arpit-patel.jpg" },
       { name: "B Meghana", email: "-", linkedin: "-", photo: "/assets/team/development/b-meghana.jpg" },
       { name: "Nathan Swalsing", email: "-", linkedin: "-", photo: "/assets/team/development/nathan-swalsing.jpg" }
@@ -191,6 +191,26 @@ export const departmentsData: Record<DepartmentId, Department> = {
       { name: "Sumit Mishra", email: "-", linkedin: "-", photo: "/assets/team/dynamics/sumit-mishra.jpg" },
       { name: "Harshita Thakur", email: "-", linkedin: "-", photo: "/assets/team/dynamics/harshita-thakur.jpg" }
     ]
+  },
+  motm: {
+    id: "motm",
+    name: "Members of the Month",
+    short: "MOTM",
+    label: "RECOGNITION",
+    color: "from-yellow-500 to-amber-500",
+    bgColor: "bg-yellow-500/10",
+    accent: "text-yellow-400",
+    accentBorder: "border-yellow-400/30",
+    icon: <Award className="w-6 h-6" />,
+    description: "Celebrating outstanding contributions and achievements of our community members.",
+    longDescription: "Recognizing and spotlighting the members who exemplify Ordinateur's values and excellence.",
+    tags: ["Recognition", "Awards", "Community"],
+    responsibilities: ["Member recognition", "Achievement tracking", "Community celebration"],
+    opportunities: ["Leadership recognition", "Community building"],
+    focus: "Inspiring excellence and community",
+    heads: [],
+    seniorMembers: [],
+    members: []
   }
 };
 
