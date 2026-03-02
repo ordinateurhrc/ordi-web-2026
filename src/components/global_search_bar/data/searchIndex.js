@@ -25,6 +25,12 @@ export const searchIndex = [
     description: "Our departments and divisions"
   },
   {
+    title: "Leadership",
+    path: "/leadership",
+    keywords: "leadership core executive board convenors",
+    description: "Meet our leadership and executive council"
+  },
+  {
     title: "Events",
     path: "/events",
     keywords: "events calendar activities programs",
@@ -95,7 +101,7 @@ export const searchIndex = [
   }, 
   {
     title: "Leadership Core", 
-    path: "/departments", 
-    keywords: "core council leaders leadership team leaders"
+    path: "/leadership", 
+    keywords: "core council leaders leadership team leaders executive board"
   }
 ];
