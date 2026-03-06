@@ -78,7 +78,7 @@ const themes = [
 const timeline = [
   {
     stage: "PPT Submission",
-    dates: "22 Feb '26 - 10 Mar '26",
+    dates: "22 Feb '26 - 15 Mar '26",
     desc: "Submit a detailed PPT outlining the problem statement, proposed solution, innovation, approach, and technologies to be used.",
   },
   {
@@ -192,7 +192,7 @@ export default function HackathonPage() {
                <motion.div variants={itemVariants} className="flex flex-wrap justify-center gap-8 md:gap-16 mb-16 border-t border-b border-white/10 py-6 max-w-4xl w-full">
                   <div className="text-center">
                      <span className="block text-xs uppercase tracking-[0.2em] text-starlight/40 font-semibold mb-2">Registration</span>
-                     <span className="block text-lg font-bold text-white">Closes Mar 10</span>
+                     <span className="block text-lg font-bold text-white">Closes Mar 15</span>
                   </div>
                   <div className="w-px bg-white/10 hidden sm:block" />
                   <div className="text-center">
@@ -535,3 +535,4 @@ export default function HackathonPage() {
     </main>
   );
 }
+
